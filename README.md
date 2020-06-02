@@ -1,7 +1,7 @@
 # ![RealWorld Example App](kvision-logo.png)
 
 [![RealWorld Frontend](https://img.shields.io/badge/realworld-fullstack-%23783578.svg)](http://realworld.io)
-[![Travis CI](https://travis-ci.com/rjaros/kvision-realworld-example-app.svg?branch=master)](https://travis-ci.com/rjaros/kvision-realworld-example-app)
+[![Travis CI](https://travis-ci.com/rjaros/kvision-realworld-example-app-fullstack.svg?branch=master)](https://travis-ci.com/rjaros/kvision-realworld-example-app)
 
 > ### [KVision](https://github.com/rjaros/kvision) codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
 
