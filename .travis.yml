@@ -11,7 +11,7 @@ os:
 install: skip
 
 script:
-  - ./gradlew -Pprod=true frontendTest jar
+  - ./gradlew frontendTest jar
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock

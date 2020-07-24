@@ -39,7 +39,7 @@ Run in two separate terminals:
 Open http://localhost:3000 in a browser to work with both servers.
 
 ### Packaging
-* `./gradlew -Pprod=true jar` - Packages a fat jar archive with all required files into `build/libs/*.jar`. 
+* `./gradlew jar` - Packages a fat jar archive with all required files into `build/libs/*.jar`. 
 
 Run with `java -jar kvision-realworld-example-app-fullstack-1.0.0-SNAPSHOT.jar` command.
 
