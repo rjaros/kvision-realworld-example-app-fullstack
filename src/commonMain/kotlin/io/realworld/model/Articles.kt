@@ -1,8 +1,8 @@
-@file:ContextualSerialization(OffsetDateTime::class)
+@file:UseContextualSerialization(OffsetDateTime::class)
 
 package io.realworld.model
 
-import kotlinx.serialization.ContextualSerialization
+import kotlinx.serialization.UseContextualSerialization
 import kotlinx.serialization.Serializable
 import pl.treksoft.kvision.remote.Id
 import pl.treksoft.kvision.remote.PersistenceConstructor

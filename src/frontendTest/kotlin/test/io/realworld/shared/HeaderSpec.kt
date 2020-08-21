@@ -3,6 +3,7 @@ package test.io.realworld.shared
 import io.realworld.ConduitState
 import io.realworld.model.User
 import io.realworld.layout.shared.headerNav
+import pl.treksoft.jquery.get
 import pl.treksoft.kvision.panel.Root
 import pl.treksoft.kvision.test.DomSpec
 import kotlin.test.Test

@@ -3,6 +3,7 @@ package io.realworld
 import io.realworld.helpers.withProgress
 import io.realworld.model.Article
 import io.realworld.model.User
+import kotlinx.browser.localStorage
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -14,7 +15,6 @@ import pl.treksoft.jquery.JQueryXHR
 import pl.treksoft.kvision.redux.createReduxStore
 import pl.treksoft.kvision.remote.ServiceException
 import pl.treksoft.navigo.Navigo
-import kotlin.browser.localStorage
 
 object ConduitManager : CoroutineScope by CoroutineScope(Dispatchers.Default + SupervisorJob()) {
 
