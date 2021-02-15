@@ -4,15 +4,15 @@ import io.realworld.ConduitManager
 import io.realworld.ConduitState
 import io.realworld.View
 import io.realworld.model.Article
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.ButtonSize
-import pl.treksoft.kvision.html.ButtonStyle
-import pl.treksoft.kvision.html.button
-import pl.treksoft.kvision.html.div
-import pl.treksoft.kvision.html.link
-import pl.treksoft.kvision.html.span
-import pl.treksoft.kvision.types.toStringF
-import pl.treksoft.kvision.utils.px
+import io.kvision.core.Container
+import io.kvision.html.ButtonSize
+import io.kvision.html.ButtonStyle
+import io.kvision.html.button
+import io.kvision.html.div
+import io.kvision.html.link
+import io.kvision.html.span
+import io.kvision.types.toStringF
+import io.kvision.utils.px
 
 fun Container.articleMeta(article: Article, state: ConduitState) {
     div(className = "article-meta") {

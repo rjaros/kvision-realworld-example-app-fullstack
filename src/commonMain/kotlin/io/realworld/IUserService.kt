@@ -1,7 +1,7 @@
 package io.realworld
 
 import io.realworld.model.User
-import pl.treksoft.kvision.annotations.KVService
+import io.kvision.annotations.KVService
 
 @KVService
 interface IUserService {

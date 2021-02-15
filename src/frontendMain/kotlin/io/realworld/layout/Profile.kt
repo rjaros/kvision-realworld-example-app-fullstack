@@ -5,8 +5,8 @@ import io.realworld.ConduitState
 import io.realworld.FeedType
 import io.realworld.View
 import io.realworld.layout.shared.pagination
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.*
+import io.kvision.core.Container
+import io.kvision.html.*
 
 fun Container.profilePage(state: ConduitState) {
     val profile = state.profile

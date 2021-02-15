@@ -3,7 +3,7 @@ package io.realworld
 import io.realworld.model.Article
 import io.realworld.model.ArticlesDto
 import io.realworld.model.Comment
-import pl.treksoft.kvision.annotations.KVService
+import io.kvision.annotations.KVService
 
 @KVService
 interface IArticleService {

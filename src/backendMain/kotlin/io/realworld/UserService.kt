@@ -8,7 +8,7 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory
 import org.springframework.context.annotation.Scope
 import org.springframework.stereotype.Service
 import org.springframework.web.reactive.function.server.ServerRequest
-import pl.treksoft.kvision.remote.ServiceException
+import io.kvision.remote.ServiceException
 import java.util.*
 
 @Service

@@ -2,23 +2,23 @@ package io.realworld.layout.users
 
 import io.realworld.ConduitManager
 import io.realworld.ConduitState
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.core.onEvent
-import pl.treksoft.kvision.form.form
-import pl.treksoft.kvision.form.text.TextAreaInput
-import pl.treksoft.kvision.form.text.TextInput
-import pl.treksoft.kvision.form.text.TextInputType
-import pl.treksoft.kvision.form.text.textAreaInput
-import pl.treksoft.kvision.form.text.textInput
-import pl.treksoft.kvision.html.ButtonStyle
-import pl.treksoft.kvision.html.ButtonType
-import pl.treksoft.kvision.html.TAG
-import pl.treksoft.kvision.html.button
-import pl.treksoft.kvision.html.div
-import pl.treksoft.kvision.html.fieldset
-import pl.treksoft.kvision.html.h1
-import pl.treksoft.kvision.html.tag
-import pl.treksoft.kvision.html.ul
+import io.kvision.core.Container
+import io.kvision.core.onEvent
+import io.kvision.form.form
+import io.kvision.form.text.TextAreaInput
+import io.kvision.form.text.TextInput
+import io.kvision.form.text.TextInputType
+import io.kvision.form.text.textAreaInput
+import io.kvision.form.text.textInput
+import io.kvision.html.ButtonStyle
+import io.kvision.html.ButtonType
+import io.kvision.html.TAG
+import io.kvision.html.button
+import io.kvision.html.div
+import io.kvision.html.fieldset
+import io.kvision.html.h1
+import io.kvision.html.tag
+import io.kvision.html.ul
 
 fun Container.settingsPage(state: ConduitState) {
     div(className = "settings-page") {

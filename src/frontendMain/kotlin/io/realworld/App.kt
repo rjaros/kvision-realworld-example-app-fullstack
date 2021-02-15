@@ -9,16 +9,16 @@ import io.realworld.layout.users.editorPage
 import io.realworld.layout.users.loginPage
 import io.realworld.layout.users.registerPage
 import io.realworld.layout.users.settingsPage
-import pl.treksoft.kvision.Application
-import pl.treksoft.kvision.html.header
-import pl.treksoft.kvision.html.main
-import pl.treksoft.kvision.module
-import pl.treksoft.kvision.pace.Pace
-import pl.treksoft.kvision.pace.PaceOptions
-import pl.treksoft.kvision.panel.ContainerType
-import pl.treksoft.kvision.panel.root
-import pl.treksoft.kvision.require
-import pl.treksoft.kvision.startApplication
+import io.kvision.Application
+import io.kvision.html.header
+import io.kvision.html.main
+import io.kvision.module
+import io.kvision.pace.Pace
+import io.kvision.pace.PaceOptions
+import io.kvision.panel.ContainerType
+import io.kvision.panel.root
+import io.kvision.require
+import io.kvision.startApplication
 
 class App : Application() {
 

@@ -4,11 +4,11 @@ package io.realworld.model
 
 import kotlinx.serialization.UseContextualSerialization
 import kotlinx.serialization.Serializable
-import pl.treksoft.kvision.remote.Id
-import pl.treksoft.kvision.remote.PersistenceConstructor
-import pl.treksoft.kvision.remote.Table
-import pl.treksoft.kvision.remote.Transient
-import pl.treksoft.kvision.types.OffsetDateTime
+import io.kvision.remote.Id
+import io.kvision.remote.PersistenceConstructor
+import io.kvision.remote.Table
+import io.kvision.remote.Transient
+import io.kvision.types.OffsetDateTime
 
 @Serializable
 data class ArticlesDto(val articles: List<Article>, val articlesCount: Int)

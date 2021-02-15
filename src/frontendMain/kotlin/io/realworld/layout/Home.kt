@@ -3,10 +3,10 @@ package io.realworld.layout
 import io.realworld.ConduitState
 import io.realworld.layout.shared.pagination
 import io.realworld.layout.shared.tags
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.div
-import pl.treksoft.kvision.html.h1
-import pl.treksoft.kvision.html.p
+import io.kvision.core.Container
+import io.kvision.html.div
+import io.kvision.html.h1
+import io.kvision.html.p
 
 fun Container.homePage(state: ConduitState) {
     div(className = "home-page") {

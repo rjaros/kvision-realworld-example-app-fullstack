@@ -1,11 +1,11 @@
 package io.realworld.layout.shared
 
 import io.realworld.View
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.div
-import pl.treksoft.kvision.html.footer
-import pl.treksoft.kvision.html.link
-import pl.treksoft.kvision.html.span
+import io.kvision.core.Container
+import io.kvision.html.div
+import io.kvision.html.footer
+import io.kvision.html.link
+import io.kvision.html.span
 
 fun Container.footer() {
     footer {

@@ -3,7 +3,7 @@ package io.realworld
 import io.realworld.model.Article
 import io.realworld.model.Comment
 import io.realworld.model.User
-import pl.treksoft.kvision.redux.RAction
+import io.kvision.redux.RAction
 
 enum class FeedType {
     USER,

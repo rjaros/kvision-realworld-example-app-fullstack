@@ -4,12 +4,12 @@ import io.realworld.ConduitManager
 import io.realworld.ConduitState
 import io.realworld.View
 import io.realworld.helpers.marked
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.form.form
-import pl.treksoft.kvision.form.text.TextAreaInput
-import pl.treksoft.kvision.form.text.textAreaInput
-import pl.treksoft.kvision.html.*
-import pl.treksoft.kvision.utils.obj
+import io.kvision.core.Container
+import io.kvision.form.form
+import io.kvision.form.text.TextAreaInput
+import io.kvision.form.text.textAreaInput
+import io.kvision.html.*
+import io.kvision.utils.obj
 
 fun Container.article(state: ConduitState) {
     if (state.article != null) {

@@ -10,11 +10,11 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.async
 import org.w3c.dom.get
 import org.w3c.dom.set
-import pl.treksoft.jquery.JQueryAjaxSettings
-import pl.treksoft.jquery.JQueryXHR
-import pl.treksoft.kvision.redux.createReduxStore
-import pl.treksoft.kvision.remote.ServiceException
-import pl.treksoft.navigo.Navigo
+import io.kvision.jquery.JQueryAjaxSettings
+import io.kvision.jquery.JQueryXHR
+import io.kvision.redux.createReduxStore
+import io.kvision.remote.ServiceException
+import io.kvision.navigo.Navigo
 
 object ConduitManager : CoroutineScope by CoroutineScope(Dispatchers.Default + SupervisorJob()) {
 

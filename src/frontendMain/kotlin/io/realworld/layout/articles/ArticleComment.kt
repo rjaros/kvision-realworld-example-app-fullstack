@@ -4,16 +4,16 @@ import io.realworld.ConduitManager
 import io.realworld.ConduitState
 import io.realworld.model.Article
 import io.realworld.model.Comment
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.core.onClick
-import pl.treksoft.kvision.html.TAG
-import pl.treksoft.kvision.html.div
-import pl.treksoft.kvision.html.image
-import pl.treksoft.kvision.html.link
-import pl.treksoft.kvision.html.p
-import pl.treksoft.kvision.html.span
-import pl.treksoft.kvision.html.tag
-import pl.treksoft.kvision.types.toStringF
+import io.kvision.core.Container
+import io.kvision.core.onClick
+import io.kvision.html.TAG
+import io.kvision.html.div
+import io.kvision.html.image
+import io.kvision.html.link
+import io.kvision.html.p
+import io.kvision.html.span
+import io.kvision.html.tag
+import io.kvision.types.toStringF
 
 fun Container.articleComment(state: ConduitState, comment: Comment, article: Article) {
     div(className = "card") {

@@ -24,12 +24,6 @@ group = "com.example"
 repositories {
     mavenCentral()
     jcenter()
-    maven { url = uri("https://dl.bintray.com/kotlin/kotlin-eap") }
-    maven { url = uri("https://kotlin.bintray.com/kotlinx") }
-    maven { url = uri("https://dl.bintray.com/kotlin/kotlin-js-wrappers") }
-    maven { url = uri("https://dl.bintray.com/rjaros/kotlin") }
-    maven { url = uri("https://repo.spring.io/milestone") }
-    maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots") }
     mavenLocal()
 }
 
@@ -81,11 +75,12 @@ kotlin {
                 }
             }
         }
+        binaries.executable()
     }
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api("pl.treksoft:kvision-server-spring-boot:$kvisionVersion")
+                api("io.kvision:kvision-server-spring-boot:$kvisionVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
             }
             kotlin.srcDir("build/generated-src/common")
@@ -122,16 +117,16 @@ kotlin {
             resources.srcDir(webDir)
             dependencies {
                 implementation(npm("marked", "^0.6.3"))
-                implementation("pl.treksoft:kvision:$kvisionVersion")
-                implementation("pl.treksoft:kvision-redux-kotlin:$kvisionVersion")
-                implementation("pl.treksoft:kvision-pace:$kvisionVersion")
+                implementation("io.kvision:kvision:$kvisionVersion")
+                implementation("io.kvision:kvision-redux-kotlin:$kvisionVersion")
+                implementation("io.kvision:kvision-pace:$kvisionVersion")
             }
             kotlin.srcDir("build/generated-src/frontend")
         }
         val frontendTest by getting {
             dependencies {
                 implementation(kotlin("test-js"))
-                implementation("pl.treksoft:kvision-testutils:$kvisionVersion:tests")
+                implementation("io.kvision:kvision-testutils:$kvisionVersion")
             }
         }
     }

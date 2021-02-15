@@ -3,7 +3,7 @@ package io.realworld.helpers
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
-import pl.treksoft.kvision.pace.Pace
+import io.kvision.pace.Pace
 
 var progressCount = 0
 

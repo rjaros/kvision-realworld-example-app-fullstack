@@ -2,11 +2,11 @@ package io.realworld.layout.shared
 
 import io.realworld.ConduitManager
 import io.realworld.ConduitState
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.li
-import pl.treksoft.kvision.html.link
-import pl.treksoft.kvision.html.nav
-import pl.treksoft.kvision.html.ul
+import io.kvision.core.Container
+import io.kvision.html.li
+import io.kvision.html.link
+import io.kvision.html.nav
+import io.kvision.html.ul
 
 fun Container.pagination(state: ConduitState) {
     val limit = state.pageSize

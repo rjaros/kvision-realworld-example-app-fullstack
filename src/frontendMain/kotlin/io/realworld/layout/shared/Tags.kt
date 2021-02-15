@@ -3,10 +3,10 @@ package io.realworld.layout.shared
 import io.realworld.ConduitManager
 import io.realworld.ConduitState
 import io.realworld.FeedType
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.div
-import pl.treksoft.kvision.html.link
-import pl.treksoft.kvision.html.p
+import io.kvision.core.Container
+import io.kvision.html.div
+import io.kvision.html.link
+import io.kvision.html.p
 
 fun Container.tags(state: ConduitState) {
     div(className = "sidebar") {

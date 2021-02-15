@@ -2,9 +2,9 @@ package io.realworld.layout
 
 import io.realworld.ConduitManager
 import io.realworld.model.Article
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.*
-import pl.treksoft.kvision.types.toStringF
+import io.kvision.core.Container
+import io.kvision.html.*
+import io.kvision.types.toStringF
 
 fun Container.articlePreview(article: Article) {
     div(className = "article-preview") {

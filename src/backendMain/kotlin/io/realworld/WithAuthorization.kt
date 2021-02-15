@@ -6,7 +6,7 @@ import io.realworld.model.User
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.web.reactive.function.server.ServerRequest
-import pl.treksoft.kvision.remote.ServiceException
+import io.kvision.remote.ServiceException
 
 val logger: Logger = LoggerFactory.getLogger(WithAuthorization::class.java)
 

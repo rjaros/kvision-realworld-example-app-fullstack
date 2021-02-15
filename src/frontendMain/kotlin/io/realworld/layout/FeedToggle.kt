@@ -3,11 +3,11 @@ package io.realworld.layout
 import io.realworld.ConduitManager
 import io.realworld.ConduitState
 import io.realworld.FeedType
-import pl.treksoft.kvision.core.Container
-import pl.treksoft.kvision.html.div
-import pl.treksoft.kvision.html.li
-import pl.treksoft.kvision.html.link
-import pl.treksoft.kvision.html.ul
+import io.kvision.core.Container
+import io.kvision.html.div
+import io.kvision.html.li
+import io.kvision.html.link
+import io.kvision.html.ul
 
 fun Container.feedToggle(state: ConduitState) {
     div(className = "feed-toggle") {
