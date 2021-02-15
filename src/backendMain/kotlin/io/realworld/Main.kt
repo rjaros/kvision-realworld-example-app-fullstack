@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.core.io.Resource
 import org.springframework.data.r2dbc.connectionfactory.init.ConnectionFactoryInitializer
 import org.springframework.data.r2dbc.connectionfactory.init.ResourceDatabasePopulator
+import org.springframework.data.r2dbc.core.DatabaseClient
 
 @SpringBootApplication
 @EnableAutoConfiguration(
@@ -33,6 +34,11 @@ class KVApplication {
 
     @Bean
     fun getManagers() = listOf(UserServiceManager, ArticleServiceManager)
+
+    @Bean
+    fun databaseClient(connectionFactory: ConnectionFactory): DatabaseClient {
+        return DatabaseClient.create(connectionFactory)
+    }
 }
 
 fun main(args: Array<String>) {
