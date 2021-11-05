@@ -1,5 +1,6 @@
 package test.io.realworld.shared
 
+import io.kvision.core.getElementJQuery
 import io.realworld.ConduitState
 import io.realworld.model.User
 import io.realworld.layout.shared.headerNav

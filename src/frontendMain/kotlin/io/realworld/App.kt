@@ -18,19 +18,22 @@ import io.kvision.pace.PaceOptions
 import io.kvision.panel.ContainerType
 import io.kvision.panel.root
 import io.kvision.require
+import io.kvision.routing.Routing
 import io.kvision.startApplication
+import io.kvision.state.bind
 
 class App : Application() {
 
     override fun start() {
+        Routing.init()
         Pace.init(require("pace-progressbar/themes/green/pace-theme-bounce.css"))
         Pace.setOptions(PaceOptions(manual = true))
         ConduitManager.initialize()
         root("kvapp", containerType = ContainerType.NONE, addRow = false) {
-            header(ConduitManager.conduitStore) { state ->
+            header().bind(ConduitManager.conduitStore) { state ->
                 headerNav(state)
             }
-            main(ConduitManager.conduitStore) { state ->
+            main().bind(ConduitManager.conduitStore) { state ->
                 if (!state.appLoading) {
                     when (state.view) {
                         View.HOME -> {

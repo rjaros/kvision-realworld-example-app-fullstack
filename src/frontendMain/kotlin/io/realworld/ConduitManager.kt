@@ -1,5 +1,8 @@
 package io.realworld
 
+import io.kvision.navigo.Navigo
+import io.kvision.redux.createReduxStore
+import io.kvision.remote.ServiceException
 import io.realworld.helpers.withProgress
 import io.realworld.model.Article
 import io.realworld.model.User
@@ -10,11 +13,7 @@ import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.async
 import org.w3c.dom.get
 import org.w3c.dom.set
-import io.kvision.jquery.JQueryAjaxSettings
-import io.kvision.jquery.JQueryXHR
-import io.kvision.redux.createReduxStore
-import io.kvision.remote.ServiceException
-import io.kvision.navigo.Navigo
+import org.w3c.fetch.RequestInit
 
 object ConduitManager : CoroutineScope by CoroutineScope(Dispatchers.Default + SupervisorJob()) {
 
@@ -23,14 +22,17 @@ object ConduitManager : CoroutineScope by CoroutineScope(Dispatchers.Default + S
     private val routing = Navigo(null, true, "#")
     val conduitStore = createReduxStore(::conduitReducer, ConduitState())
 
-    val userService = UserService(::authRequest)
-    val articleService = ArticleService(::authRequest)
+    val userService = UserService {
+        this.authRequest()
+    }
+    val articleService = ArticleService {
+        this.authRequest()
+    }
 
-    private fun authRequest(xhr: JQueryXHR, @Suppress("UNUSED_PARAMETER") settings: JQueryAjaxSettings): Boolean {
+    private fun RequestInit.authRequest(): Unit {
         getJwtToken()?.let {
-            xhr.setRequestHeader("Authorization", "Token $it")
+            this.headers["Authorization"] = "Token $it"
         }
-        return true
     }
 
     fun initialize() {
