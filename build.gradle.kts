@@ -21,7 +21,6 @@ group = "com.example"
 
 repositories {
     mavenCentral()
-    jcenter()
     mavenLocal()
 }
 
@@ -81,7 +80,6 @@ kotlin {
                 api("io.kvision:kvision-server-spring-boot:$kvisionVersion")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
             }
-            kotlin.srcDir("build/generated-src/common")
         }
         val commonTest by getting {
             dependencies {
@@ -97,7 +95,7 @@ kotlin {
                 implementation("org.springframework.boot:spring-boot-devtools")
                 implementation("org.springframework.boot:spring-boot-starter-webflux")
                 implementation("org.springframework.data:spring-data-r2dbc:$springDataR2dbcVersion")
-                implementation("io.r2dbc:r2dbc-postgresql:$r2dbcPostgresqlVersion")
+                implementation("org.postgresql:r2dbc-postgresql:$r2dbcPostgresqlVersion")
                 implementation("io.r2dbc:r2dbc-h2:$r2dbcH2Version")
                 implementation("com.github.andrewoma.kwery:core:$kweryVersion")
                 implementation("com.auth0:java-jwt:$jwtVersion")
@@ -121,7 +119,6 @@ kotlin {
                 implementation("io.kvision:kvision-state:$kvisionVersion")
                 implementation("io.kvision:kvision-routing-navigo:$kvisionVersion")
             }
-            kotlin.srcDir("build/generated-src/frontend")
         }
         val frontendTest by getting {
             dependencies {

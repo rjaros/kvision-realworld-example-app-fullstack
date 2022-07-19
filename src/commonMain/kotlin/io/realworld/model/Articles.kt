@@ -14,7 +14,7 @@ import io.kvision.types.OffsetDateTime
 data class ArticlesDto(val articles: List<Article>, val articlesCount: Int)
 
 @Serializable
-@Table("articles")
+@Table("articles", "articles", "")
 data class Article(
     @Id
     val id: Int? = null,
@@ -50,7 +50,7 @@ data class Article(
 }
 
 @Serializable
-@Table("comments")
+@Table("comments", "comments", "")
 data class Comment(
     @Id
     val id: Int? = null,

@@ -7,7 +7,7 @@ import io.kvision.remote.Table
 import io.kvision.remote.Transient
 
 @Serializable
-@Table("users")
+@Table("users", "users", "")
 data class User(
     @Id
     val id: Int? = null,
